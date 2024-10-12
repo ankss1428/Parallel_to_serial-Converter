@@ -57,30 +57,30 @@ endmodule
 
 //tb
 
-//module tb();
+module tb();
 
-//reg [15:0] din;
-//reg clk;
-//reg rst;
-//wire dout;
-//wire fs;
-//wire [4:0] count;
-//initial begin
-//    clk=1;
-//    din=16'h1111;
+reg [15:0] din;
+reg clk;
+reg rst;
+wire dout;
+wire fs;
+wire [4:0] count;
+initial begin
+    clk=1;
+    din=16'h1111;
     
-//    end
-//p2s p2s_tb ( .din(din), .clk(clk), .rst(rst), .dout(dout),.fs(fs), .count(count) );
+    end
+p2s p2s_tb ( .din(din), .clk(clk), .rst(rst), .dout(dout),.fs(fs), .count(count) );
 
   
-//  always #10 clk=~clk;
+  always #10 clk=~clk;
   
-//      initial begin
+      initial begin
        
-//       rst =1'b1;
-//       #200
-//       rst=1'b0;
+       rst =1'b1;
+       #200
+       rst=1'b0;
       
-//       end
+       end
 
-//endmodule
+endmodule
